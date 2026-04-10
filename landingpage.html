@@ -1,0 +1,239 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Lập trình cho người mới</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container nav">
+    <div class="logo">DevStart</div>
+    <nav>
+      <ul>
+        <li><a href="#curriculum">Lộ trình</a></li>
+        <li><a href="#courses">Môn học</a></li>
+        <li><a href="#cta">Đăng ký</a></li>
+      </ul>
+    </nav>
+    <a href="#cta" class="btn">Đăng ký ngay</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="text">
+      <h1>Khởi đầu sự nghiệp lập trình của bạn tại đây!</h1>
+      <p>Khám phá cụm môn học nền tảng toàn diện trong 3 tháng, từ Zero đến Hero.</p>
+      <a href="#curriculum" class="btn-primary">Tìm hiểu lộ trình</a>
+    </div>
+    <div class="image">
+      <img src="https://via.placeholder.com/500" alt="hero">
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="courses">
+  <div class="container">
+    <h2>Cụm môn học</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>HTML & CSS</h3>
+        <p>Xây dựng giao diện web hiện đại, responsive.</p>
+        <span>1 tháng</span>
+      </div>
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>JavaScript</h3>
+        <p>Thêm tương tác và logic cho website.</p>
+        <span>1 tháng</span>
+      </div>
+      <div class="card">
+        <div class="icon">🐍</div>
+        <h3>Python</h3>
+        <p>Xử lý dữ liệu và xây dựng backend cơ bản.</p>
+        <span>1 tháng</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curriculum" class="curriculum">
+  <div class="container">
+    <h2>Lộ trình học tập</h2>
+    <div class="timeline">
+      <div class="step">
+        <h3>Tháng 1</h3>
+        <p>HTML & CSS - Xây dựng Landing Page hoàn chỉnh</p>
+      </div>
+      <div class="step">
+        <h3>Tháng 2</h3>
+        <p>JavaScript - To-do App tương tác</p>
+      </div>
+      <div class="step">
+        <h3>Tháng 3</h3>
+        <p>Python - Xây dựng API đơn giản</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="cta">
+  <div class="container">
+    <h2>Sẵn sàng bắt đầu?</h2>
+    <p>Tham gia ngay hôm nay và trở thành lập trình viên trong 3 tháng!</p>
+    <a href="#" class="btn-primary">Đăng ký học ngay</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 DevStart. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #343a40;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+.btn, .btn-primary {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn {
+  border: 1px solid #007bff;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.hero {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.courses {
+  padding: 60px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.curriculum {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  text-align: center;
+}
+
+.cta {
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #343a40;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .timeline {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
