@@ -1,19 +1,24 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Lập trình cho người mới</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>DevStart - Khởi đầu sự nghiệp lập trình của bạn</title>
+  <!-- Google Fonts: Poppins for modern, clean typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- ===============================================
+     HEADER / NAVIGATION
+     =============================================== -->
 <header class="header">
   <div class="container nav">
+    <!-- LOGO -->
     <div class="logo">DevStart</div>
+    
+    <!-- NAVIGATION MENU -->
     <nav>
       <ul>
         <li><a href="#curriculum">Lộ trình</a></li>
@@ -21,84 +26,118 @@
         <li><a href="#cta">Đăng ký</a></li>
       </ul>
     </nav>
+    
+    <!-- CTA BUTTON -->
     <a href="#cta" class="btn">Đăng ký ngay</a>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- ===============================================
+     HERO SECTION
+     Main attraction with headline and image
+     =============================================== -->
 <section class="hero">
   <div class="container hero-content">
+    <!-- HERO TEXT SECTION -->
     <div class="text">
       <h1>Khởi đầu sự nghiệp lập trình của bạn tại đây!</h1>
       <p>Khám phá cụm môn học nền tảng toàn diện trong 3 tháng, từ Zero đến Hero.</p>
       <a href="#curriculum" class="btn-primary">Tìm hiểu lộ trình</a>
     </div>
+    
+    <!-- HERO IMAGE SECTION -->
     <div class="image">
-      <img src="https://via.placeholder.com/500" alt="hero">
+      <img src="https://via.placeholder.com/500x400?text=Web+Development+Journey" alt="Khởi đầu sự nghiệp lập trình">
     </div>
   </div>
 </section>
 
-<!-- COURSES -->
+<!-- ===============================================
+     COURSES SECTION
+     Display the 3 main courses with cards
+     =============================================== -->
 <section id="courses" class="courses">
   <div class="container">
-    <h2>Cụm môn học</h2>
+    <h2>Cụm Môn Học</h2>
+    
+    <!-- COURSES CARDS -->
     <div class="cards">
+      <!-- COURSE 1: HTML & CSS -->
       <div class="card">
         <div class="icon">🌐</div>
         <h3>HTML & CSS</h3>
-        <p>Xây dựng giao diện web hiện đại, responsive.</p>
+        <p>Xây dựng giao diện web hiện đại, responsive và thu hút. Học cách tạo layout, styling và làm cho trang web đẹp.</p>
         <span>1 tháng</span>
       </div>
+      
+      <!-- COURSE 2: JAVASCRIPT -->
       <div class="card">
         <div class="icon">⚡</div>
         <h3>JavaScript</h3>
-        <p>Thêm tương tác và logic cho website.</p>
+        <p>Thêm tương tác và logic cho website. Khám phá DOM, Events, Async/Await và các khái niệm cơ bản của JavaScript.</p>
         <span>1 tháng</span>
       </div>
+      
+      <!-- COURSE 3: PYTHON -->
       <div class="card">
         <div class="icon">🐍</div>
         <h3>Python</h3>
-        <p>Xử lý dữ liệu và xây dựng backend cơ bản.</p>
+        <p>Xử lý dữ liệu và xây dựng backend cơ bản. Học lập trình backend, API design và cơ sở dữ liệu.</p>
         <span>1 tháng</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CURRICULUM -->
+<!-- ===============================================
+     CURRICULUM / LEARNING ROADMAP
+     Display the 3-month learning timeline
+     =============================================== -->
 <section id="curriculum" class="curriculum">
   <div class="container">
-    <h2>Lộ trình học tập</h2>
+    <h2>Lộ Trình Học Tập</h2>
+    
+    <!-- TIMELINE STEPS -->
     <div class="timeline">
+      <!-- MONTH 1: HTML & CSS -->
       <div class="step">
         <h3>Tháng 1</h3>
-        <p>HTML & CSS - Xây dựng Landing Page hoàn chỉnh</p>
+        <p><strong>HTML & CSS</strong> - Xây dựng Landing Page hoàn chỉnh. Học cách sử dụng HTML semantic, CSS Grid, Flexbox và tạo responsive layouts.</p>
       </div>
+      
+      <!-- MONTH 2: JAVASCRIPT -->
       <div class="step">
         <h3>Tháng 2</h3>
-        <p>JavaScript - To-do App tương tác</p>
+        <p><strong>JavaScript</strong> - To-do App tương tác. Làm chủ JavaScript cơ bản, DOM manipulation, Events và localStorage để tạo ứng dụng động.</p>
       </div>
+      
+      <!-- MONTH 3: PYTHON -->
       <div class="step">
         <h3>Tháng 3</h3>
-        <p>Python - Xây dựng API đơn giản</p>
+        <p><strong>Python</strong> - Xây dựng API đơn giản. Tìm hiểu HTTP, Flask/Django cơ bản, database integration và deployment.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ===============================================
+     CALL-TO-ACTION SECTION
+     Strong call-to-action for conversion
+     =============================================== -->
 <section id="cta" class="cta">
   <div class="container">
     <h2>Sẵn sàng bắt đầu?</h2>
-    <p>Tham gia ngay hôm nay và trở thành lập trình viên trong 3 tháng!</p>
+    <p>Tham gia ngay hôm nay và trở thành lập trình viên chuyên nghiệp trong 3 tháng!</p>
     <a href="#" class="btn-primary">Đăng ký học ngay</a>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ===============================================
+     FOOTER
+     Copyright and closing information
+     =============================================== -->
 <footer class="footer">
-  <p>© 2026 DevStart. All rights reserved.</p>
+  <p>&copy; 2026 DevStart Academy. Tất cả quyền được bảo lưu. | Được thiết kế với ❤️ cho những người yêu thích lập trình</p>
 </footer>
 
 </body>
